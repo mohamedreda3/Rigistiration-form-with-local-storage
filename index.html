@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title></title>
+</head>
+<body>
+<div class="forms">
+
+	<div class="model">
+		<p><i class="fa-solid fa-times"></i></p>
+		<div class="message"><h1></h1></div>
+	</div>
+	<!-------------------- Rigisiration Form ----------------------->
+	<form class="rigister form">
+		<h1 class="form_title" onclick="rigister()">Rigister</h1>
+		<div class="input_field">
+			<input name="name" required>
+			<label>Enter Name</label>
+		</div>
+		<div class="input_field">
+			<input name="email" required>
+			<label>Enter Email</label>
+		</div>
+		<div class="input_field">
+			<input type="password" name="password" required>
+			<label for="password">Enter Password</label>
+			<div class="srength"><span class="weak"></span><span class="medium"></span><span class="strong"></span></div>
+		</div>
+	    <button type="submit">Rigister</button>
+		<div class="social_media_icons">
+			<h1>Rigister With</h1>
+			<div class="icons">
+				<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+			</div>
+		</div>
+	</form>
+	<!-------------------- Rigisiration Form ----------------------->
+	<!-- ============================================================================= -->
+	<!-------------------- Sign In Form ----------------------->
+	<form class="signIn form"> 
+		<h1 class="form_title" onclick="signIn()">Sign in</h1>
+		<div class="input_field">
+			<input name="email" required>
+			<label>Enter Your Email</label>
+		</div>
+		<div class="input_field">
+			<input name="password" required>
+			<label>Enter Your Password</label>
+		</div>
+	    <button type="submit">Log in</button>
+		<div class="social_media_icons">
+			<h1>Login With</h1>
+			<div class="icons">
+				<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+			</div>
+		</div>
+	</form>
+	<!-------------------- Sign In Form ----------------------->
+</div>
+<script type="text/javascript">
+	var signIn = () => document.querySelector('form.rigister.form').classList.add('active');
+	var rigister = () => document.querySelector('form.rigister.form').classList.remove('active');
+</script>
+<script type="text/javascript" src="assets/js/all.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
