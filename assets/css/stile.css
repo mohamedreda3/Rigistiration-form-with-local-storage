@@ -1,0 +1,149 @@
+*{
+    position: relative;
+  }
+
+body{
+	    padding-bottom: 13px;
+}
+
+textarea {
+    resize: both;
+    width: 300px;
+    padding: 5px;
+    outline-color: blue;
+    border-radius: 6px;
+}
+.model_and_textArea {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0px 0px;
+    flex-direction: column;
+}
+.model {
+    background: white;
+    color: black;
+    width: 270px;
+    min-height: 150px;
+    z-index: 99;
+    border-radius: 7px;
+    position: absolute;
+    padding: 0 10px;
+    box-shadow: 3px -2px 120px -1px grey;
+    flex-direction: column;
+    transition: 0.5s cubic-bezier(0.21, 0.7, 0.57, 0.21);
+    transform: scale(0);
+}
+
+.model.active{
+transform: scale(1);
+}
+
+.model p{
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.model h1 {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn-dark {
+    margin-top: 8px;
+}
+
+.container-fluid.active {
+    position: fixed;
+    top: 3px;
+    background: white;
+    z-index: 9999;
+}
+
+.meal {
+    width: 300px;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+form {
+    margin: 12px 0px;
+    outline: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form > .textbox {
+  outline: 0;
+  height: 42px;
+  width: 244px;
+  line-height: 42px;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #212121;
+  border: 0;
+}
+
+form > .textbox:focus {
+  outline: 0;
+  background-color: #FFF;
+}
+
+form > .button {
+  outline: 0;
+  background: none;
+  background-color: rgba(38, 50, 56, 0.8);
+  float: left;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 0;
+  color: #FFF;
+  font-size: 16px;
+  text-rendering: auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color .4s ease;
+  border-radius: 0 4px 4px 0;
+}
+
+form > .button:hover {
+  background-color: rgba(0, 150, 136, 0.8);
+}
+
+.mealImg,
+.meal .mealImg img {
+    width: 100%;
+}
+
+.mealImg {
+    z-index: -1;
+}
+
+.meals {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+    /* gap: 13px; */
+    /* padding: 10px; */
+    margin: 5px 0px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.table {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.btn-dark:hover {
+    color: black;
+    background: white;
+}
